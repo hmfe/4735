@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>The wizard</title>
+    <meta name="author" content="Gustav Karlström" />
+    <meta name="keywords" content="HTML,CSS,JSON,JavaScript, H&M" />
+    <meta name="description" content="Some organic ad text" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./mainStyles.css" />
+
+    <script src="./main.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="searchWrapper">
+        <div id="searchBarWrapper" class="wrapper">
+          <input
+            id="searchBar"
+            autocomplete="off"
+            autofocus="true"
+            placeholder="Search me..."
+            type="text"
+            title="Sök"
+            aria-label="Sök"
+          />
+          <ul id="searchSuggestions" role="listbox"></ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="searchHistorySection">
+        <table id="searchHistory"></table>
+      </section>
+    </main>
+    <section class="assignmentOne">
+      <button id="assignmentOneButton">Delete</button>
+    </section>
+  </body>
+</html>
