@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  padding: 0 20px;
+}
+.searchWrapper {
+  align-self: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#searchBar {
+  border-radius: 4px;
+  height: 26px;
+  padding: 0 0 0 10px;
+  border: 0;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 6px 0 rgba(32, 33, 36, 0.28);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  padding: 4px 7px;
+}
+
+#searchSuggestions {
+  width: 100%;
+  list-style-type: none;
+  word-wrap: break-word;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+#searchBar:focus {
+  box-shadow: inset 0px 0px 3px 1px #3e76ea;
+  transition: 200ms;
+}
+
+.autoCompleteActive {
+  box-shadow: 0px 0px 6px 5px #ffe9e9;
+  background-color: #ffe9e9;
+}
+
+#searchSuggestions > li {
+  margin-top: 7px;
+}
+
+#searchHistory {
+  max-width: 500px;
+  font-size: 14px;
+}
+
+#searchHistory button {
+  border: 0;
+  font-size: 17px;
+  color: red;
+  background-color: transparent;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.liAutoComplete:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 6px 5px #ffe9e9;
+  background-color: #ffe9e9;
+}
+
+.searchHistorySection {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+#searchHistory td {
+  padding: 5px 0;
+}
+
+.assignmentOne {
+  display: flex;
+}
+
+#assignmentOneButton {
+  background-color: #f3ab57;
+  width: 150px;
+  height: 75px;
+  font-size: 18px;
+  border: 2px solid #808080;
+  margin: 0 auto;
+  cursor: pointer;
+  font-weight: bold;
+}
+#assignmentOneButton::after {
+  content: 'X';
+  background-color: white;
+  border-radius: 24px;
+  padding: 11px 15px;
+  margin-left: 14px;
+}
